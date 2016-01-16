@@ -1,0 +1,3 @@
+[submodule "equipment"]
+	path = equipment
+	url = https://github.com/jsr38/equipment.git
