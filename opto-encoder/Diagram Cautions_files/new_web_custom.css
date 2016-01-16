@@ -1,0 +1,38 @@
+/* OVERRIDE IBM CLASSES  */
+.wpToolbarLogo {
+    display: none !important;
+}
+
+.infoModeToggle {
+    display: none !important;
+}
+
+.wpthemeBannerInner {
+	background: -webkit-linear-gradient(top, #565656 0%,#f3f3f3 100%) !important;
+}
+
+.wpthemeLayoutContainers {
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wptheme1Col .wpthemeCol {
+	width: 100%;
+	margin: 0;
+	min-height: 0;
+}
+
+.wpthemeInner, .wpthemeSecondaryNav {
+	width: 100%;
+	margin: 0;
+	min-height: 0;
+}
+
+.wpthemeOverflowAuto {
+	overflow: hidden  !important;
+}
+
+/* NEW WEB CUSTOM CSS */

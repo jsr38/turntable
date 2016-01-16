@@ -1,0 +1,73 @@
+@import url("canon-styles-external.css");
+
+/* version 13.07.15*/
+/**********************************
+***********************************
+
+CSS merged as of 03-20-2015 in order
+
+- Portal Fixes
+- megamenu.css
+- canon-styles.css
+- ribbon-styles.css (includes defakto.css)
+
+***********************************
+**********************************/
+
+/* Font Awesome */
+@font-face {
+	font-family:'FontAwesome';
+	src:url(../fonts/fontawesome-webfont.eot?v=4.3.0);
+	src:url(../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format("embedded-opentype"),
+        url(../fonts/fontawesome-webfont.woff2?v=4.3.0) format("woff2"),
+        url(../fonts/fontawesome-webfont.woff?v=4.3.0) format("woff"),
+        url(../fonts/fontawesome-webfont.ttf?v=4.3.0) format("truetype"),
+        url(../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format("svg");
+	font-weight:400;
+	font-style:normal;
+}
+
+/* Font CANON */
+@font-face {
+    font-family: 'OpticSans Light';
+    src: url('../fonts/OpticSans-101-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans LightItalic';
+    src: url('../fonts/OpticSans-102-LightItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans Book';
+    src: url('../fonts/OpticSans-201-Book.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans BookItalic';
+    src: url('../fonts/OpticSans-202-BookItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans Medium';
+    src: url('../fonts/OpticSans-301-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans MediumItalic';
+    src: url('../fonts/OpticSans-302-MediumItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans Bold';
+    src: url('../fonts/OpticSans-401-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans BoldItalic';
+    src: url('../fonts/OpticSans-402-BoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans Heavy';
+    src: url('../fonts/OpticSans-501-Heavy.woff') format('woff');
+}
+@font-face {
+    font-family: 'OpticSans HeavyItalic';
+    src: url('../fonts/OpticSans-502-HeavyItalic.woff') format('woff');
+}
+
+
+
