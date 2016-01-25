@@ -1,0 +1,162 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_shieldsNCL
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "3D Scanning Turntable"
+Date ""
+Rev "0.1"
+Comp "Argusat Limited"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_SHIELD SHIELD?
+U 1 1 56A61ABF
+P 4950 2600
+F 0 "SHIELD?" H 4950 3687 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 4950 3581 60  0000 C CNN
+F 2 "" H 4950 2600 60  0000 C CNN
+F 3 "" H 4950 2600 60  0000 C CNN
+	1    4950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56A61C8B
+P 3300 4250
+F 0 "#PWR?" H 3300 4000 50  0001 C CNN
+F 1 "GND" H 3308 4076 50  0000 C CNN
+F 2 "" H 3300 4250 50  0000 C CNN
+F 3 "" H 3300 4250 50  0000 C CNN
+	1    3300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR?
+U 1 1 56A61CAF
+P 3000 2250
+F 0 "#PWR?" H 3000 2350 50  0001 C CNN
+F 1 "-5V" H 3018 2424 50  0000 C CNN
+F 2 "" H 3000 2250 50  0000 C CNN
+F 3 "" H 3000 2250 50  0000 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56A61CC6
+P 6600 2750
+F 0 "#PWR?" H 6600 2600 50  0001 C CNN
+F 1 "+5V" H 6618 2924 50  0000 C CNN
+F 2 "" H 6600 2750 50  0000 C CNN
+F 3 "" H 6600 2750 50  0000 C CNN
+	1    6600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56A61D1F
+P 6600 3150
+F 0 "R?" H 6670 3196 50  0000 L CNN
+F 1 "390R" H 6670 3104 50  0000 L CNN
+F 2 "" V 6530 3150 50  0000 C CNN
+F 3 "" H 6600 3150 50  0000 C CNN
+	1    6600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56A61E09
+P 3300 3850
+F 0 "R?" H 3370 3896 50  0000 L CNN
+F 1 "100kR" H 3370 3804 50  0000 L CNN
+F 2 "" V 3230 3850 50  0000 C CNN
+F 3 "" H 3300 3850 50  0000 C CNN
+	1    3300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56A61E93
+P 2800 3850
+F 0 "R?" H 2870 3896 50  0000 L CNN
+F 1 "100kR" H 2870 3804 50  0000 L CNN
+F 2 "" V 2730 3850 50  0000 C CNN
+F 3 "" H 2800 3850 50  0000 C CNN
+	1    2800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2750 6600 3000
+Wire Wire Line
+	5900 3400 6600 3400
+Wire Wire Line
+	6600 3400 6600 3300
+Wire Wire Line
+	2800 4000 3300 4000
+Wire Wire Line
+	3300 4000 3300 4250
+Wire Wire Line
+	3300 3700 3300 3400
+Wire Wire Line
+	1800 3400 4000 3400
+Wire Wire Line
+	2800 3700 2800 3300
+Wire Wire Line
+	1700 3300 4000 3300
+$Comp
+L CONN_02X06 P?
+U 1 1 56A61FC0
+P 2200 2800
+F 0 "P?" H 2200 3266 50  0000 C CNN
+F 1 "CONN_02X06" H 2200 3174 50  0000 C CNN
+F 2 "" H 2200 1600 50  0000 C CNN
+F 3 "" H 2200 1600 50  0000 C CNN
+	1    2200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2550 1700 2550
+Wire Wire Line
+	1700 2550 1700 3300
+Connection ~ 2800 3300
+Wire Wire Line
+	1950 2650 1800 2650
+Wire Wire Line
+	1800 2650 1800 3400
+Connection ~ 3300 3400
+$EndSCHEMATC
