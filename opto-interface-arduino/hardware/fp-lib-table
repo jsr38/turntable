@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name arduino_shields)(type Legacy)(uri "$(KIPRJMOD)/hardware/library/arduino_shields.mod")(options "")(descr ""))
+)

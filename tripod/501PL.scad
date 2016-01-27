@@ -7,10 +7,10 @@
 // Available under the CC BY license
 
 channel = 5.5;              // Width of the channel in the middle
-height = 8.5;               // Height of the plate (>=11 mm recommended)
+height = 8.0;               // Height of the plate (>=11 mm recommended)
 length = 19.0 * 2.0 + 3.0; // Length of the plate (90 mm is the stock one)
 wall = 3;                   // Thickness of walls
-width = 36.0;              // Width of the main cube structure
+width = 35.5;              // Width of the main cube structure
 channel_offset = width / 2.0;
 
 tan_theta = 2.625 / length;
