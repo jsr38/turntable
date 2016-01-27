@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/jsr/dev/turntable/opto-interface-arduino/opto-interface.sch)
-    (date "Tue 26 Jan 2016 14:06:17 GMT")
+    (source /home/jsr/dev/turntable/opto-interface-arduino/hardware/opto-interface.sch)
+    (date "Wed 27 Jan 2016 10:31:31 GMT")
     (tool "Eeschema 0.201601252101+6513~42~ubuntu15.10.1-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -209,12 +209,12 @@
   (libraries
     (library (logical arduino_shieldsNCL)
       (uri /home/jsr/dev/turntable/opto-interface-arduino/hardware/library/arduino_shieldsNCL.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
     (library (logical regul)
       (uri /usr/share/kicad/library/regul.lib))
     (library (logical device)
-      (uri /usr/share/kicad/library/device.lib)))
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib)))
   (nets
     (net (code 1) (name +5V)
       (node (ref R3) (pin 1))
