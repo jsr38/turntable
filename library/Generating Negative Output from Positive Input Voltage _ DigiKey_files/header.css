@@ -1,0 +1,434 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+}
+
+/* Overall Header Styles */
+#header {
+  color: #fff;
+  height: 100px;
+  font-size: 12px;
+  min-width: 800px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAABkBAMAAAC4HDcUAAAAD1BMVEUAAADMAABmZmaYAABNAABCTNBsAAAALElEQVR4Xu2PwQkAQAjDDie4biDdf7c6goK4hJhHyDf2itGJpHdJioVvAH4CcDcF1fl6dSEAAAAASUVORK5CYII=);
+}
+
+#header img {
+  border: none;
+}
+
+#header #header-left {
+  width: 155px;
+  float: left;
+  padding: 7px 0 0 7px;
+}
+
+#header #header-left a img {
+  width:155px;
+  height:83px;
+}
+
+#header #header-middle {
+  overflow: hidden;
+  text-align: center;
+}
+
+#header #header-right {
+  float: right;
+  text-align: right;
+}
+
+#header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .header-icon {
+  vertical-align: middle;
+}
+
+#header .header-resource-sep {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAsCAMAAAB4zplQAAAAflBMVEVmZmZoZGRpY2NqYmJsYGBuXl5vXV1xW1t0WFh2VlZ3VVV6UlJ8UFB+Tk6BS0uDSUmGRkaIRESLQUGNPz+QPDyTOTmWNjaYNDSaMjKeLi6gLCyjKSmmJiaoJCSqIiKtHx+wHByyGhq1Fxe2Fha5ExO8EBC+Dg6/DQ2YAABNAAAbPPl6AAAAGklEQVR4XsXCQQ0AAACCQLB/aD92cLvA6EsBK2sAq8/jjdUAAAAASUVORK5CYII=);
+  display: inline-block;
+  height: 14px;
+  padding: 15px 0px;
+  width: 2px;
+}
+
+/* Search Bar/List/Button Styles */
+#header #header-search-wrapper {
+  margin: 17px auto;
+  color: #000;
+  max-width: 500px
+}
+
+#header #header-search-select-wrapper {
+  float: left;
+}
+
+#header #header-search-type {
+  width: 130px;
+  height: 22px;
+  margin: 0;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  border-right: 1px solid #000;
+  -moz-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAAAAAAkral2AAAAIElEQVR4Xl3JUQYAAAzDUHL/s+4I7RhT6slXGHz0lRwv4oAV+i5ULtAAAAAASUVORK5CYII=);
+}
+
+#header #header-search-type:hover {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAMAAAA2GAaYAAAAQlBMVEXP0tnO0djN0NfMz9bKzdTIy9LHytHFyM/Dxs3BxMu/wsm8v8a6vcS4u8K2ucC0t76ytbyxtLuvsrmtsLesr7arrrXGHPLyAAAAF0lEQVR4Xo3BAQ0AAAABMN4/tAp20dcABdkAQjyaAacAAAAASUVORK5CYII=);
+}
+
+#header #header-search-button {
+  height: 22px;
+  width: 50px;
+  border: 0;
+  margin: 0;
+  padding: 0 15px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  float: right;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAWCAMAAAC13D+jAAAAsVBMVEXR0dEjHyDm5ubZ2dkvKyxIRUbV1dWCgIB3dXbd3NwvLC1UUVJIREXOzc10cnKko6NycHBQTU7FxcXS0tLU1NSXlZbAwMCPjY1ua2ytrKzc29tEQUJST1Dp6enl5eXd3d3Pz8/s7Ozo6Ojh4eHu7u7t7e3j4+Pr6+vOzs7b29vX19fNzc3f399oZma1tLVnZGVzcXFFQULKyspmZGRoZWbJyck8ODnHx8cuKyufnZ5/fX3QDHdaAAAAtUlEQVR4XpXJRW4EQRAF0R9Ng8wMZma+/8GsUcuy1Jm1qLcKKXQWTefRdIimy7Dh0B3aBDTmTWjOG/boxLf8gDyHfGmWEl+LdidJOm1aZmnrmpKlx0gzptWnC9eMehl1ZtWnU1eN2n9U6M7VY13Gml71aecSTI4xIZN51657oLtYdOHHPKWeN/482akbxyPw9d0fDPoPzlVhvQLPL0WIxhaweh8HaWTB6nMUpnjaR9NVNN1G+wVpL3XvUFTpCAAAAABJRU5ErkJggg==) no-repeat right #999999;
+  -moz-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+}
+
+#header #header-search-button:hover {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAWCAMAAAC13D+jAAAAtFBMVEXP0tkjHyCytbwtKivHytGxtLtycXVCP0JiYWSytbvAwsl9fYFCP0GCg4hlZGiUlZtMSkxpaGxIRkhKSEq7vcRkY2asrrSnqK6Oj5S+wMe0t75kZGfIy9K2ucC6vcS4u8KrrrXMz9a/wsnDxs3BxMvFyM/O0djKzdTN0Nesr7a8v8Y+Oz2vsrmtsLctKSqanKJcWl44NTY+PD6rrbRubnKprLJbWl2oq7FaWFtaWVwsKSqIiY5zb9/LAAAAuUlEQVR4XpXL1YoEQRBE0Yh213HXdXf5///aboZloCrroQ4kJFwC9nBhDVfWsDUbjcSAS4Mkckk3SvSChWz6TIZhd1MtwZNVzGLPizNWWsJRNKY76MPA5Vht2ItS1qdQM1UbDqKAwflRYCeasD2FlhO14UbkkHkfcj44asNK9ESyKMuCfNMa1pIP/pvrEUvBN8mf32HTDB+Fipnui+TL68wEjo7k7btjBF/XLT59M9xZw701XFvDxtofHDB4+g/br+cAAAAASUVORK5CYII=) no-repeat right #999999;
+}
+
+#header #header-search-holder {
+  display: block;
+  overflow: hidden;
+}
+
+#header #header-search {
+  width: 100%;
+  border: 0;
+  padding: 0 5px;
+  height: 22px;
+  box-sizing: border-box;
+}
+
+/* Dropdown Box Styles */
+#header .header-dropdown-sep {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #666666, white, #666666);
+  background-image: -moz-linear-gradient(left, #666666, white, #666666);
+  background-image: -ms-linear-gradient(left, #666666, white, #666666);
+  background-image: -o-linear-gradient(left, #666666, white, #666666);
+}
+
+#header .header-dropdown {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#header .header-dropdown-title {
+  cursor: pointer;
+}
+
+#header .header-resource {
+  display: inline-block;
+  height: 14px;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #fff;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+#header .header-resource:hover, #header .header-dropdown-active {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAsAgMAAADZSTryAAAACVBMVEU9PT0uLi4XFxcX4tXxAAAAGUlEQVR4XrXBAQ0AAACCMEcy+qcyBTsLiAcQ0ADZgys/TAAAAABJRU5ErkJggg==);
+}
+
+#header .header-dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #666;
+  padding: 8px;
+  z-index: 100;
+  -moz-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  text-align: left;
+}
+
+/* Country/Currency Styles */
+#header .header-sep {
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
+  margin: 0 5px;
+  width: 2px;
+  background-color: #fff;
+}
+
+#header #header-locale {
+  margin: 4px 10px;
+  height: 48px;
+  font-weight: bold;
+}
+
+#header #header-locale select {
+  height: 18px;
+  position: relative;
+  top: 1px;
+	font-family:arial, sans-serif;
+	font-size:100%;
+	font-weight:inherit;
+}
+
+#header .header-locale-row {
+  height: 20px;
+  margin: 2px 0;  
+}
+
+#header #header-locale a[href]:hover {
+  text-decoration: underline;
+}
+
+#header .header-flag {
+  vertical-align: middle;
+  border: solid 1px #666;
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Products/Resouces Dropdown */
+#header .header-dropdown a {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#header .header-resource-content p {
+  margin: 0;
+  padding: 0;
+}
+
+#header .header-resource-content p.header-dark {
+  display: block;
+  color: #ccc;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#header .header-resource-content ul {
+  margin: 0;
+  padding: 0;
+}
+
+#header .header-resource-content li {
+  list-style-type: none;
+}
+
+#header .header-product-content, #header .header-resource-content {
+  padding: 0px 15px 10px 15px;
+}
+
+#header .header-resource-content {
+  padding-top: 10px;
+}
+
+#header .header-product-content a, #header .header-resource-content a {
+  display: block;
+  padding: 2px 15px 2px 0;
+}
+
+#header .header-product-content a:hover, #header .header-resource-content a:hover {
+  text-decoration: underline;
+  color: #eee;
+}
+
+#header .header-product-content td {
+  padding-right: 20px;
+}
+
+/* Button Styles */
+#header a.header-button {
+  display: block;
+  padding: 5px;
+  background-color: #bbb;
+  border: 1px solid #999;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+#header a.header-button:hover {
+  background-color: #ccc;
+}
+
+/* My Digi-Key Button */
+#header #header-login-title {
+  padding: 5px 10px;
+  height: 33px;
+  text-align: left;
+}
+
+#header #header-login-title p {
+  margin: 0;
+}
+
+#header .header-hello {
+  font-size: 10px;
+  color: #eee;
+  line-height: 17px;
+}
+
+/* Cart Dropdown */
+#header .header-cart-detail {
+  padding: 5px 5px 5px 85px;
+}
+
+#header .header-cart-detail:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+#header .header-cart-detail img {
+  float: left;
+  border: solid 1px #999;
+  margin-right: 10px;
+  margin-left: -80px;
+  width: 64px;
+  height: 64px;
+}
+
+#header .header-cart-detail p {
+  margin: 0;
+  font-weight: bold;
+}
+
+#header .header-cart-pn {
+  white-space: nowrap;
+}
+
+#header .header-cart-detail p.header-cart-ref {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+#header .header-cart-detail p.header-cart-quantity {
+  margin-top: 10px;
+}
+
+#header #header-cart-disclaimer {
+  text-align: center;
+  margin: 5px auto;
+  font-size: 10px;
+}
+
+/* Print Styles */
+@media print {
+  #header-right, #header-middle, .dk_subheaderlinks, #breadcrumbs {
+    display:none; padding:0px; margin:0px;
+  }
+}
+
+/* Popups */
+.header-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .75;
+  filter: Alpha(Opacity=75);
+  z-index: 100;
+}
+
+.header-popup iframe {
+  width: 100%;
+  min-height: 400px;
+  background-color: #FFF;
+  border: none;
+}
+
+@media screen and (max-width:640px) {
+  div.header-popup {
+    width: 95%; left: 0; margin-left: 2%; margin-right: 2%;
+  }
+}
+
+.header-popup {
+  width: 600px;
+  min-height: 400px;
+  position: fixed;
+  left: 50%;
+  padding: .2em;
+  overflow: hidden;
+  margin-left: -303px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+  color: #222222;
+}
+
+.header-popup-titlebar {
+  padding: 0.5em 1em 0.3em 65px;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  border: solid 2px #ed1c24;
+  background: url(//www.digikey.com/web%20export/mkt/general/smlogo.png) #000000 left no-repeat;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+}
+
+.header-popup-titlebar:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.header-popup-title {
+  float: left;
+  margin: .1em 16px .2em 0;
+  color: #fff;
+  font-weight: bold;    
+}
+
+.header-popup-close {
+  position: absolute;
+  right: .3em;
+  top: 50%;
+  width: 19px;
+  margin: -10px 0 0 0;
+  padding: 1px;
+  height: 18px;
+  color: #222222;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.header-popup-icon {
+  display: block;
+  margin: 1px;
+  background-image: url(//www.digikey.com/~/media/Files/Global/iw-hf/images/ui-icons_888888_256x240.png);
+  background-position: -96px -128px;
+  width: 16px;
+  height: 16px;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  color: #222222;
+}
