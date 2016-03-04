@@ -1,4 +1,4 @@
-update=Saturday, 06 February 2016 'pmt' 16:01:59
+update=Thu 03 Mar 2016 13:03:24 GMT
 version=1
 last_client=kicad
 [general]
@@ -29,7 +29,7 @@ BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
 [eeschema]
 version=1
-LibDir=library
+LibDir=library;../../../kicad-library
 [eeschema/libraries]
 LibName1=opto-interface-rescue
 LibName2=power
@@ -63,3 +63,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=library/arduino_shieldsNCL
 LibName32=library/borniers
+LibName33=/home/jsr/dev/kicad-library/max889

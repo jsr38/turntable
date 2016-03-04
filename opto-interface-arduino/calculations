@@ -1,0 +1,57 @@
+
+MAX889 Charge pump IC
+
+We have MAX889S variant.
+
+PART    FREQUENCY C FLY C OUT C IN REGULATED C IN FREE-RUN
+MAX889S 1MHz      2.2μF 10μF  10μF           2.2μF
+
+
+Output Ripple mV  vs Load Current substituting  C OUT and a load I=50-100mA , ripple ought to be 5-8mV.  Is this OK?
+
+We don't know because we don't know exactly what's inside and there is no indication on the encoder's datasheet.  Ripple should be fundamentally located @fOSC which is 1MHz, so filtering should be straightforward given our estimate for encoder signals of ~   DO SUMS
+
+From the datasheet,
+
+\begin{equation*}
+R_1 \le \frac{V_{ref}}{30\m uA}
+\end{equation*}
+
+\begin{equation*}
+R_2 \lt \frac{-V_{out}}{30\mu A}
+\end{equation*}
+
+Calculate for 12V input and reference at 5V.
+
+\begin{equation*}
+R_1 \le \frac{5}{30\m uA} \eq 167kR
+\end{equation*}
+
+\begin{equation*}
+R_2 \lt \frac{5}{30\mu A} \eq 167kR
+\end{equation*}
+
+Choose R1 to be less than or equal 100kR.
+
+\begin{equation*}
+R_1 \eq 100kR
+\end{equation*}
+
+\begin{equation*}
+R_2 \eq R_1 \left ( \frac{V_{out}}{- V_{ref}} \right ) = \frac{100e3 -5 }{ -5} = 100kR
+\end{equation*}
+
+
+Calculate for 12V input and reference at 12V.
+
+\begin{equation*}
+R_1 \le \frac{12}{30\m uA} \eq 400kR
+\end{equation*}
+
+\begin{equation*}
+R_2 \lt \frac{5}{30\mu A} \eq 167kR
+\end{equation*}
+
+
+Design input filter using spice.
+
