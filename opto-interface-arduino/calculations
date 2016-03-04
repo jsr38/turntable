@@ -1,5 +1,7 @@
 
 MAX889 Charge pump IC
+---------------------
+
 
 We have MAX889S variant.
 
@@ -9,7 +11,8 @@ MAX889S 1MHz      2.2μF 10μF  10μF           2.2μF
 
 Output Ripple mV  vs Load Current substituting  C OUT and a load I=50-100mA , ripple ought to be 5-8mV.  Is this OK?
 
-We don't know because we don't know exactly what's inside and there is no indication on the encoder's datasheet.  Ripple should be fundamentally located @fOSC which is 1MHz, so filtering should be straightforward given our estimate for encoder signals of ~   DO SUMS
+We don't know because we don't know exactly what's inside and there is no indication on the encoder's datasheet as to tolerance of supply noise/ripple.  Ripple should be fundamentally located @fOSC which is 1MHz, so filtering should be straightforward given our estimate for encoder signals of ~   DO SUMS
+
 
 From the datasheet,
 
@@ -54,4 +57,27 @@ R_2 \lt \frac{5}{30\mu A} \eq 167kR
 
 
 Design input filter using spice.
+--------------------------------
+
+Operating fundamental frequency for encoder:   81,000  * 2*pi rad rev^-1  @ 1 rev s^-1 maximum, => 81kHz so cutoff out to be > 100kHz.
+
+Output O/C impedance is 110 ohms @ 100kHz.
+
+Voltage divider to find 600mV between 0V and 5V:
+
+\begin{equation*}
+V_{out}      \= V_{in}\frac{Z_1}{Z_1 + Z_2} \
+\Rightarrow  \left ( \frac{0.6}{5} - 1 \right) Z_1 + \frac{0.6}{5} Z_2 \= 0
+\Rightarrow  Z_1 \= \left ( \frac{5}{0.6} - 1 \right) Z_2
+\end{equation*}
+
+If $Z_2 = 100kR$ then $Z_1 = 733kR$
+
+
+Arduino sample rates.
+---------------------
+
+
+15k SPS  or 76.9k SPS at lowest resolution.
+
 
