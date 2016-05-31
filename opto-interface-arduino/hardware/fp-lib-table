@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name arduino_shields)(type Legacy)(uri "$(KIPRJMOD)/library/arduino_shields.mod")(options "")(descr ""))
+  (lib (name regul)(type KiCad)(uri "$(KIPRJMOD)/library/regul.pretty")(options "")(descr ""))
 )

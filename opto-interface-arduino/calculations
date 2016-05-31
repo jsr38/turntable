@@ -59,7 +59,7 @@ R_2 \lt \frac{5}{30\mu A} \eq 167kR
 Design input filter using spice.
 --------------------------------
 
-Operating fundamental frequency for encoder:   81,000  * 2*pi rad rev^-1  @ 1 rev s^-1 maximum, => 81kHz so cutoff out to be > 100kHz.
+Operating fundamental frequency for encoder:   81,000  * 2*pi rad rev^-1  @ 1 rev s^-1 maximum, => 81kHz so cutoff ought to be > 100kHz.
 
 Output O/C impedance is 110 ohms @ 100kHz.
 

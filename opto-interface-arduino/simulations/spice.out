@@ -1,0 +1,22 @@
+
+Circuit: ********************************************************************************
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 9  
+
+No. of Data Rows : 88
+.print line ignored since rawfile was produced.
+CPU time since last call: 0.008 seconds.
+
+Total CPU time: 0.008 seconds.
+
+Total DRAM available = 7897.714844 MB.
+DRAM currently available = 807.542969 MB.
+Total ngspice program size = 14.775391 MB.
+Resident set size = 2.015625 MB.
+Shared ngspice pages = 1.772461 MB.
+Text (code) pages = 1.333008 MB.
+Stack = 0 bytes.
+Library pages = 267.000 kB.
+

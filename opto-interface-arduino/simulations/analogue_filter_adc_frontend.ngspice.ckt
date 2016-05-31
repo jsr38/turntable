@@ -6,7 +6,7 @@
 * Schematic : /home/jsr/dev/turntable/opto-interface-arduino/simulations/analogue_filter_adc_frontend.sch
 
 * Component Definitions
-C1 2 1 10u
+C1 2 1 1u
 C2 5 4 14p
 R1 3 2 750K
 R2 2 0 100K
@@ -17,8 +17,8 @@ V2 5 0 DC 1V65
 V3 3 0 DC 3V3
 
 * NG-Spice Simulation Commands
-.OPTIONS NOPAGE WIDTH=104 UNITS=RADIANS
-.PRINT AC VDB(1,0) VDB(4) VP(1,0) VP(4)
-.AC DEC 20 10.00 250.00k
+.OPTIONS NOPAGE WIDTH=72 UNITS=RADIANS
+.PRINT AC VDB(4) VP(4)
+.AC DEC 20 10 250.00k
 
 .END
