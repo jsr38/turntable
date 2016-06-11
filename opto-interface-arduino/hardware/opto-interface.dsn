@@ -21,14 +21,15 @@
       )
     )
     (boundary
-      (rect pcb 143758 -46129.6 217472 -105454)
+      (path pcb 0  218440 -51435  147955 -51435  147955 -105410  218440 -105410
+            218440 -51435  218440 -51435)
     )
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
-      (clearance 200.1)
-      (clearance 200.1 (type default_smd))
-      (clearance 50 (type smd_smd))
+      (clearance 400.1)
+      (clearance 400.1 (type default_smd))
+      (clearance 100 (type smd_smd))
     )
   )
   (placement
@@ -39,14 +40,14 @@
       (place D1 190500 -96520 front 0 (PN ZENER))
     )
     (component Resistors_SMD:R_0805_HandSoldering
-      (place R1 203835 -96520 front 90 (PN 750kR))
-      (place R2 201295 -96520 front 90 (PN 100kR))
-      (place R3 209550 -96520 front 90 (PN 750kR))
-      (place R4 206375 -96520 front 90 (PN 100kR))
-      (place R5 179070 -95250 front 180 (PN 100kR))
-      (place R6 171450 -88900 front 90 (PN 100kR))
-      (place R7 184785 -97790 front 0 (PN 1k3R))
-      (place R8 203835 -90805 front 90 (PN 390R))
+      (place R1 195580 -90170 front 90 (PN 750kR))
+      (place R2 203835 -97790 front 0 (PN 100kR))
+      (place R3 205740 -92710 front 0 (PN 750kR))
+      (place R4 210820 -97155 front 90 (PN 100kR))
+      (place R5 179070 -94615 front 180 (PN 100kR))
+      (place R6 173355 -89535 front 90 (PN 100kR))
+      (place R7 184150 -97790 front 90 (PN 1k3R))
+      (place R8 201295 -90805 front 90 (PN 390R))
     )
     (component Pin_Headers:Pin_Header_Straight_2x06
       (place P1 210820 -77470 front 0 (PN CONN_02X06))
@@ -55,28 +56,28 @@
       (place P2 152400 -87630 front 0 (PN CONN_01X06))
     )
     (component Capacitors_SMD:c_elec_8x5.4
-      (place C5 165100 -90170 front 90 (PN 4u7F))
-      (place C2 175260 -81280 front 0 (PN CP))
-      (place C3 187960 -87630 front 270 (PN CP))
+      (place C5 161290 -89535 front 90 (PN 4u7F))
+      (place C2 175895 -81280 front 0 (PN CP))
+      (place C3 188595 -88265 front 270 (PN CP))
     )
     (component Capacitors_ThroughHole:C_Disc_D6_P5
-      (place C6 172085 -93980 front 270 (PN 0u1F))
-      (place C7 157480 -91440 front 90 (PN 0u1F))
+      (place C6 168275 -89535 front 90 (PN 0u1F))
+      (place C7 157480 -100965 front 90 (PN 0u1F))
     )
     (component Discret:CP5
-      (place C8 196215 -90805 front 270 (PN 2u2F))
+      (place C8 189230 -81280 front 180 (PN 2u2F))
       (place C9 162560 -82550 front 180 (PN 2u2F))
     )
     (component Discret:CP4
-      (place C1 201930 -76200 front 0 (PN 10uF))
-      (place C4 201930 -79375 front 0 (PN 10uF))
+      (place C1 200025 -85090 front 0 (PN 10uF))
+      (place C4 207010 -85090 front 90 (PN 10uF))
     )
     (component "SMD_Packages:SOIC-8-N"
       (place U1 179070 -90170 front 90 (PN max889))
     )
     (component "regul:TO-220_regul_Horizontal_LargePads"
-      (place U2 185420 -78740 front 0 (PN LM7805))
-      (place U3 160020 -78740 front 0 (PN LM7905))
+      (place U2 185420 -77470 front 0 (PN LM7805))
+      (place U3 160020 -77470 front 0 (PN LM7905))
     )
   )
   (library
@@ -526,7 +527,7 @@
       )
       (rule
         (width 250)
-        (clearance 200.1)
+        (clearance 400.1)
       )
     )
   )
