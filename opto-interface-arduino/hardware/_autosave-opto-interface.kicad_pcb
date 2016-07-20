@@ -3,7 +3,7 @@
   (general
     (links 62)
     (no_connects 0)
-    (area 147.904999 51.384999 218.490001 105.460001)
+    (area 143.55803 45.93 218.490001 105.654)
     (thickness 1.6)
     (drawings 4)
     (tracks 215)
@@ -13,6 +13,13 @@
   )
 
   (page A4)
+  (title_block
+    (title "Opto Encoder Interface")
+    (date 2016-07-20)
+    (company https://github.com/jsr38)
+    (comment 1 v_0_2_proto_pcb)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -85,7 +92,7 @@
       (subtractmaskfromsilk false)
       (outputformat 5)
       (mirror true)
-      (drillshape 0)
+      (drillshape 2)
       (scaleselection 1)
       (outputdirectory svg))
   )

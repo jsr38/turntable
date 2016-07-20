@@ -9,7 +9,7 @@ device=vac
 T 43400 46350 5 10 0 0 0 0 1
 footprint=none
 T 43400 45750 5 10 1 1 0 0 1
-value=dc 0 ac 1
+value=dc 0 ac 3
 }
 C 44900 47500 1 270 0 resistor-2.sym
 {
@@ -18,7 +18,7 @@ device=RESISTOR
 T 45200 47300 5 10 1 1 270 0 1
 refdes=R1
 T 44900 47500 5 10 1 1 0 0 1
-value=750K
+value=100K
 }
 C 44900 45500 1 270 0 resistor-2.sym
 {
@@ -28,17 +28,6 @@ T 45200 45300 5 10 1 1 270 0 1
 refdes=R2
 T 44900 45500 5 10 1 1 0 0 1
 value=100K
-}
-C 44500 46700 1 180 0 capacitor-2.sym
-{
-T 44300 46000 5 10 0 0 180 0 1
-device=POLARIZED_CAPACITOR
-T 44300 46200 5 10 1 1 180 0 1
-refdes=C1
-T 44300 45800 5 10 0 0 180 0 1
-symversion=0.1
-T 44500 46700 5 10 1 1 0 0 1
-value=1u
 }
 C 44900 43700 1 0 0 gnd-1.sym
 N 43000 46500 43600 46500 4
@@ -91,7 +80,7 @@ device=VOLTAGE_SOURCE
 T 46400 48850 5 10 0 0 0 0 1
 footprint=none
 T 46400 48250 5 10 1 1 0 0 1
-value=DC 3V3
+value=DC 5V
 }
 C 45900 47200 1 0 0 gnd-1.sym
 N 45000 47500 45000 49000 4
@@ -99,3 +88,14 @@ N 45000 49000 46000 49000 4
 N 46000 47800 46000 47500 4
 C 47400 42700 1 0 0 gnd-1.sym
 N 47500 43300 47500 43000 4
+C 43600 46300 1 0 0 capacitor-1.sym
+{
+T 43800 47000 5 10 0 0 0 0 1
+device=CAPACITOR
+T 43800 46800 5 10 1 1 0 0 1
+refdes=C1
+T 43800 47200 5 10 0 0 0 0 1
+symversion=0.1
+T 43600 46300 5 10 1 1 0 0 1
+value=10u
+}

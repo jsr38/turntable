@@ -7,11 +7,11 @@
     (fanout off)
     (autoroute on)
     (postroute on)
-    (vias off)
+    (vias on)
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1195)
+    (start_pass_no 953)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -19,14 +19,14 @@
       (against_preferred_direction_trace_costs 2.3)
     )
     (layer_rule B.Cu
-      (active off)
+      (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
       (against_preferred_direction_trace_costs 1.8)
     )
   )
   (rule
-    (width 500.0)
+    (width 250.0)
     (clear 400.2)
     (clear 125.0 (type smd_to_turn_gap))
     (clear 100.0 (type smd_smd))
@@ -56,7 +56,7 @@
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 500.0)
+      (width 250.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
@@ -67,12 +67,11 @@
     "Net-(P1-Pad5)" "Net-(SHIELD1-Pad1)" "Net-(SHIELD1-Pad2)" "Net-(SHIELD1-Pad3)" "Net-(SHIELD1-Pad4)" "Net-(SHIELD1-Pad5)" "Net-(SHIELD1-Pad6)" "Net-(SHIELD1-Pad7)"
     "Net-(SHIELD1-Pad8)" "Net-(SHIELD1-Pad9)" "Net-(SHIELD1-Pad10)" "Net-(SHIELD1-Pad11)" "Net-(SHIELD1-Pad12)" "Net-(SHIELD1-Pad13)" "Net-(SHIELD1-PadGND3)" "Net-(D1-Pad1)"
     +5V "-5V" "Net-(P1-Pad11)" +12V "-12V" "Net-(C1-Pad1)" "Net-(C1-Pad2)" "Net-(C3-Pad1)"
-    "Net-(C3-Pad2)" "Net-(C4-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad1)" "Net-(P1-Pad2)" "Net-(P1-Pad7)" "Net-(P1-Pad9)" "Net-(R5-Pad2)"
-    "Net-(SHIELD1-PadAD4)"
+    "Net-(C3-Pad2)" "Net-(C4-Pad1)" "Net-(C4-Pad2)" "Net-(P1-Pad2)" "Net-(R5-Pad2)" "Net-(SHIELD1-PadAD4)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
-      (width 500.0)
+      (width 450.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)

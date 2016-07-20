@@ -1,5 +1,13 @@
+%  -*- mode: latex; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- 
 
-MAX889 Charge pump IC
+\documentclass[11pt,twoside,a4paper]{article}
+
+\usepackage{mathtools}
+
+\begin{document}
+
+
+\section{MAX889 Charge pump IC}
 ---------------------
 
 
@@ -17,67 +25,82 @@ We don't know because we don't know exactly what's inside and there is no indica
 From the datasheet,
 
 \begin{equation*}
-R_1 \le \frac{V_{ref}}{30\m uA}
+R_1 \leq \frac{V_{ref}}{30\mu A}
 \end{equation*}
 
 \begin{equation*}
-R_2 \lt \frac{-V_{out}}{30\mu A}
+R_2 < \frac{-V_{out}}{30\mu A}
 \end{equation*}
 
 Calculate for 12V input and reference at 5V.
 
 \begin{equation*}
-R_1 \le \frac{5}{30\m uA} \eq 167kR
+R_1 \leq \frac{5}{30\mu A} = 167kR
 \end{equation*}
 
 \begin{equation*}
-R_2 \lt \frac{5}{30\mu A} \eq 167kR
+R_2 < \frac{5}{30\mu A} = 167kR
 \end{equation*}
 
 Choose R1 to be less than or equal 100kR.
 
 \begin{equation*}
-R_1 \eq 100kR
+R_1 = 100kR
 \end{equation*}
 
 \begin{equation*}
-R_2 \eq R_1 \left ( \frac{V_{out}}{- V_{ref}} \right ) = \frac{100e3 -5 }{ -5} = 100kR
+R_2 = R_1 \left ( \frac{V_{out}}{- V_{ref}} \right ) = \frac{100e3 -5 }{ -5} = 100kR
 \end{equation*}
 
 
 Calculate for 12V input and reference at 12V.
 
 \begin{equation*}
-R_1 \le \frac{12}{30\m uA} \eq 400kR
+R_1 \leq \frac{12}{30\mu A} = 400kR
 \end{equation*}
 
 \begin{equation*}
-R_2 \lt \frac{5}{30\mu A} \eq 167kR
+R_2 < \frac{5}{30\mu A} = 167kR
 \end{equation*}
 
 
-Design input filter using spice.
+\section{Design input filter using spice.}
 --------------------------------
 
-Operating fundamental frequency for encoder:   81,000  * 2*pi rad rev^-1  @ 1 rev s^-1 maximum, => 81kHz so cutoff ought to be > 100kHz.
+Operating fundamental frequency for encoder:   $81,000  * 2*\pi$ rad rev$^{-1}$  @ 1 rev s$^{-1}$ maximum, $\geq$ 81kHz so cutoff ought to be $>$ 100kHz.
 
 Output O/C impedance is 110 ohms @ 100kHz.
 
 Voltage divider to find 600mV between 0V and 5V:
 
 \begin{equation*}
-V_{out}      \= V_{in}\frac{Z_1}{Z_1 + Z_2} \
-\Rightarrow  \left ( \frac{0.6}{5} - 1 \right) Z_1 + \frac{0.6}{5} Z_2 \= 0
-\Rightarrow  Z_1 \= \left ( \frac{5}{0.6} - 1 \right) Z_2
+V_{out}      = V_{in}\frac{Z_1}{Z_1 + Z_2} \
+\Rightarrow  \left ( \frac{0.6}{5} - 1 \right) Z_1 + \frac{0.6}{5} Z_2 = 0
+\Rightarrow  Z_1 = \left ( \frac{5}{0.6} - 1 \right) Z_2
 \end{equation*}
 
 If $Z_2 = 100kR$ then $Z_1 = 733kR$
 
+Voltage divider to find 2.5V between 0V and 5V:
 
-Arduino sample rates.
+\begin{equation*}
+V_{out}      = V_{in}\frac{Z_1}{Z_1 + Z_2} \
+\Rightarrow  \left ( \frac{2.5}{5} - 1 \right) Z_1 + \frac{2.5}{5} Z_2 = 0
+\Rightarrow  Z_1 = \left ( \frac{5}{2.5} - 1 \right) Z_2
+\end{equation*}
+
+If $Z_2 = 100kR$ then $Z_1 = 100kR$
+
+\subsection{Schematic model}
+
+\subsection{Model response}
+
+\section{Arduino sample rates.}
 ---------------------
 
 
 15k SPS  or 76.9k SPS at lowest resolution.
 
+
+\end{document}
 
