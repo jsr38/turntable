@@ -12,3 +12,6 @@ The turntable electronics are designed to interface to an Arduino Uno as a pair 
 opto-interface:
 ![alt text](https://github.com/jsr38/turntable/raw/master/opto-interface-arduino/hardware/opto-interface.png "Opto Encoder Interface")
 
+opto-interface prototype:
+![alt text](https://github.com/jsr38/turntable/raw/master/opto-interface-arduino/hardware/opto-interface-proto-v_0_2.jpg "Opto Encoder Interface Prototype v0.2")
+
